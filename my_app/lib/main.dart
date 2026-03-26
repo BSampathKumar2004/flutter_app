@@ -5,6 +5,15 @@ void main() {
   runApp(MyApp());
 }
 
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: BluetoothPage(),
+    );
+  }
+}
+
 class BluetoothPage extends StatefulWidget {
   @override
   _BluetoothPageState createState() => _BluetoothPageState();
